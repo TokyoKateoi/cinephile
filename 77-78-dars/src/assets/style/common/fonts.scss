@@ -1,0 +1,17 @@
+$Raleway:("Bold",700),("Regular",400);
+@each $name,$weight in $Raleway{
+    @font-face {
+        font-family: "Raleway";
+        src: url("@/assets/fonts//Raleway-#{$name}.ttf");
+        font-weight: $weight;
+    }
+}
+$Montserrat:("Bold",700),("Regular",400),("Light",300),
+("BoldItalic",750);
+@each $name,$weight in $Montserrat{
+    @font-face {
+        font-family: "Montserrat";
+        src: url("@/assets/fonts//Montserrat-#{$name}.ttf");
+        font-weight: $weight;
+    }
+}
